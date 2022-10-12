@@ -20,6 +20,7 @@ const commands = [
   require('./lib/commands/hdr'),
   require('./lib/commands/head'),
   require('./lib/commands/help'),
+  require('./lib/commands/last'),
   require('./lib/commands/list'),
   require('./lib/commands/list_active'),
   require('./lib/commands/list_newsgroups'),
@@ -29,6 +30,7 @@ const commands = [
   require('./lib/commands/mode_reader'),
   require('./lib/commands/newgroups'),
   require('./lib/commands/newnews'),
+  require('./lib/commands/next'),
   require('./lib/commands/over'),
   require('./lib/commands/quit'),
   require('./lib/commands/stat'),
@@ -48,6 +50,7 @@ const DEFAULT_OPTIONS = {
   secure: false,
   // TLS/SSL options (see node.js TLS documentation).
   tls: null,
+  allow_posting: false,
   session: Session,
   commands
 };
@@ -150,6 +153,29 @@ Nntp.prototype._getArticle = function (/*session, message_id*/) {
 
 
 /*
+ * Return message object or `null`.
+ *
+ * - articleNumber: the article number
+ * - message_id: the message-id string like '<message_identifier>'
+ */
+Nntp.prototype._getLast = function (/*session*/) {
+  throw new Error('method `nntp._getLast` is not implemented');
+};
+
+
+/*
+ * Return message object or `null`.
+ *
+ * - articleNumber: the article number
+ * - message_id: the message-id string like '<message_identifier>'
+ */
+Nntp.prototype._getNext = function (/*session*/) {
+  throw new Error('method `nntp._getNext` is not implemented');
+};
+
+
+		
+/*
  * Get list of message numbers current group in given interval.
  *
  * Returns an array/stream of articles that could be used later
@@ -158,6 +184,16 @@ Nntp.prototype._getArticle = function (/*session, message_id*/) {
 Nntp.prototype._getRange = function (/*session, first, last, options*/) {
   throw new Error('method `nntp._getRange` is not implemented');
 };
+
+/*
+ * Post an article
+ *
+ * Returns true if successful, false if not.
+ */
+Nntp.prototype._postArticle = function (/*session*/) {
+  throw new Error('method `nntp._postArticle` is not implemented');
+};
+
 
 
 /*
