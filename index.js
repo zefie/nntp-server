@@ -11,8 +11,7 @@ const Session = require('./lib/session');
 
 const commands = [
   require('./lib/commands/article'),
-  require('./lib/commands/authinfo_pass'),
-  require('./lib/commands/authinfo_user'),
+  require('./lib/commands/authinfo'),
   require('./lib/commands/body'),
   require('./lib/commands/capabilities'),
   require('./lib/commands/date'),
