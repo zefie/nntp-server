@@ -1,5 +1,35 @@
-nntp-server
-===========
+nntp-server, zefie editon
+=========================
+
+What I did
+----------
+- Finished implementation of LAST
+- Finished implementation of NEXT
+- Added implementation (albiet hacky) of POST
+- Modified AUTHINFO command to accept lowercase "user" and "pass" for Thunderbird support
+- Other minor customizations for my personal project
+
+What I won't do
+---------------
+- Add other features that my project does not need
+- Address any bugs/issues that do not directly affect my project (with the exception of any security/vulnerability issues, eg Dependabot)
+- Clean up any dirty code (mine or upstream) if it works as intended
+- Send a Pull Request to any repos (upstream or otherwise. You are free to cherry-pick my updates from my repo.)
+- Provide help and/or support for my modifications (code is provided as-is)
+
+Notes
+-----
+This repo may be rebased and/or fast-forwarded at any time. If you clone this repo, keep this in mind.
+
+I may attempt to upload this module to the **npm** database under a different name, but only if using this github repo in my project's package.json becomes too troublesome for my project's users. If I upload it to **npm** I will update this README with the package's name.
+
+My implementation can be found at [zefie_wtvp_minisrv dev branch includes/WTVNewsServer.js](https://github.com/zefie/zefie_wtvp_minisrv/blob/dev/zefie_wtvp_minisrv/includes/WTVNewsServer.js)
+
+---
+
+**Original project README (at time of fork) is as follows:**
+
+---
 
 [![CI](https://github.com/nodeca/nntp-server/actions/workflows/ci.yml/badge.svg)](https://github.com/nodeca/nntp-server/actions/workflows/ci.yml)
 [![NPM version](https://img.shields.io/npm/v/nntp-server.svg?style=flat)](https://www.npmjs.org/package/nntp-server)
