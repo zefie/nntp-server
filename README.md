@@ -21,7 +21,7 @@ Notes
 -----
 This repo may be rebased and/or fast-forwarded at any time. If you clone this repo, keep this in mind.
 
-I may attempt to upload this module to the **npm** database under a different name, but only if using this github repo in my project's package.json becomes too troublesome for my project's users. If I upload it to **npm** I will update this README with the package's name.
+This package is available on npmjs as [nntp-server-zefie](https://www.npmjs.com/package/nntp-server-zefie).
 
 My implementation can be found at [zefie_wtvp_minisrv dev branch includes/WTVNewsServer.js](https://github.com/zefie/zefie_wtvp_minisrv/blob/dev/zefie_wtvp_minisrv/includes/WTVNewsServer.js)
 
